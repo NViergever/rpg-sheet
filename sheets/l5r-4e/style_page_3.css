@@ -1,0 +1,92 @@
+#page-3 img.page {
+  content: url(page-3.svg);
+}
+
+#page-3-grid {
+  left: 72px;
+  top: 108px;
+  width: 816px;
+  height: 1049px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 739px auto;
+  row-gap: 15px;
+  column-gap: 18px;
+}
+
+#page-3-grid > div[id^="school-techniques-table"] {
+  position: relative;
+}
+
+#page-3-grid > div[id^="school-techniques-table"] > input[name="school-techniques[school]"] {
+  position: relative;
+}
+
+#page-3-grid > div[id^="school-techniques-table"] {
+  display: grid;
+  row-gap: 6px;
+  column-gap: 1px;
+  grid-template-rows: 22px repeat(5, 133px);
+  grid-template-columns: 170px 35px;
+  margin: 19px 1px 1px 53px;
+}
+
+.school-techniques-line {
+  display: grid;
+  position: relative;
+  grid-column: 1 / span 2;
+  grid-template-columns: 170px auto;
+  grid-template-rows: 31px 101px;
+  gap: 1px;
+}
+
+#page-3-grid > div[id^="school-techniques-table"] .school-techniques-line > input[name*="[learned]"] {
+  position: relative;
+  width: 16px;
+  height: 16px; 
+  margin: 6px 8px 7px 9px;
+}
+
+#page-3-grid > div[id^="school-techniques-table"] .school-techniques-line > input {
+  position: relative;
+}
+
+#page-3-grid > div[id^="school-techniques-table"] .school-techniques-line > textarea {
+  position: relative;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+
+#page-3-grid > div[id^="kata-table"] * {
+  position: relative;
+}
+
+#page-3-grid > div[id^="kata-table"] {
+  gap: 6px;
+  grid-template-rows: repeat(2, 87px) auto;
+  margin: 20px 1px 1px 53px;
+}
+
+#page-3-grid > div[id^="kata-table"] > .kata-line {
+  display: grid;
+  position: relative;
+  grid-template-columns: 77px 76px;
+  grid-template-rows: 21px 37px auto;
+  row-gap: 1px;
+  column-gap: 53px;
+}
+
+#page-3-grid > div[id^="kata-table"] > .kata-line[name*="line"] {
+  grid-template-rows: 18px 37px auto;
+}
+
+#page-3-grid > div[id^="kata-table"] .kata-line > input {
+  position: relative;
+}
+
+#page-3-grid > div[id^="kata-table"] > .kata-line > input[name*="[name]"]{
+  grid-column: 1 / span 2;
+}
+
+#page-3-grid > div[id^="kata-table"] > .kata-line > input[name*="[effect]"]{
+  grid-column: 1 / span 2;
+}

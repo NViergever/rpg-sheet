@@ -1,0 +1,300 @@
+#page-1 img.page {
+  content: url(page-1.svg);
+}
+
+/* Sheet header */
+#sheet-header {
+  left: 70px;
+  top: 62px;
+  width: 560px;
+  height: 80px;
+  padding: 2px;
+  grid-template-rows: 22px 3px 22px 3px 22px auto;
+  grid-template-columns: 54px 214px 17px 127px 140px;
+}
+
+#sheet-header > input {
+  position: relative;
+}
+
+#sheet-header > input[name="character-name"] {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+#sheet-header > input[name="rank"] {
+  grid-row: 1;
+  grid-column: 5;
+}
+
+#sheet-header > input[name="clan"] {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+#sheet-header > input[name="experience-points"] {
+  grid-row: 3;
+  grid-column: 5;
+}
+
+#sheet-header > input[name="school"] {
+  grid-row: 5;
+  grid-column: 2;
+}
+
+#sheet-header > input[name="insight"] {
+  grid-row: 5;
+  grid-column: 5;
+}
+
+#status-board {
+  left: 646px;
+  top: 209px;
+  width: 213px;
+  height: 189px;
+  display: grid;
+  padding: 37px 15px 32px;
+  grid-template-rows: 22px 32px 22px 36px 22px 33px 22px;
+}
+
+#status-board > div{
+  position: relative;
+}
+
+#page-1-grid {
+  left: 72px;
+  top: 502px;
+  width: 816px;
+  height: 656px;
+  grid-template-columns: auto 243px;
+  grid-template-rows: 482px 159px;
+  row-gap: 15px;
+  column-gap: 18px;
+}
+
+#page-1-grid div {
+  display: grid;
+}
+
+/* Skill table */
+#skill-table {
+  position: relative;
+  width: 549px;
+  height: 454px;
+  padding-top: 24px;
+  padding-left: 2px;
+  row-gap: 1.8px;
+  grid-template-rows: repeat(23, 18px);
+}
+
+#skill-table .skill-line{
+  grid-auto-flow: column; 
+  grid-template-columns: 16px 8px 192px 12px 30px 12px 31px 12px 30px 12px 192px;
+  padding: 1px;
+  position: relative;
+  width: 549px;
+  height: 18px;
+}
+
+#skill-table .skill-line * {
+  position: relative;
+}
+
+#skill-table .skill-line input[type=checkbox] {
+  height: 16px;
+  width: 16px;
+}
+
+/* Weapon table */
+#weapons-table {
+  position: relative;
+  width: 557px;
+  height: 159px;
+  grid-row: 2;
+  grid-template-columns: 183px 183px auto;
+}
+#weapons-table * {
+  position: relative;
+}
+
+#weapons-table .weapon * {
+  position: relative;
+}
+
+#weapons-table .weapon {
+  position: relative;
+  padding: 21px 1px 1px;
+  grid-template-columns: 66px 115px; 
+  grid-template-rows: repeat(4, 22px) 44px; 
+  gap: 1px
+}
+
+#weapons-table .arrows * {
+  position: relative;
+} 
+
+#weapons-table .arrows {
+  position: relative;
+  padding: 21px 1px 1px 5px;
+  grid-template-columns: repeat(3, 61px); 
+  grid-template-rows: repeat(6, 22px); 
+  gap: 1px
+}
+
+/* initiative-armor-wounds table */
+#initiative-armor-wounds-table {
+  grid-column: 2;
+  column-span: 2;
+  grid-template-rows: repeat(3, 84px) 56px 263px 85px;
+  width: 241px;
+  height: 656px;
+  padding-left: 1px;
+}
+
+#initiative-armor-wounds-table input {
+  position: relative;
+}
+
+#initiative {
+  padding-top: 20px;
+  padding-bottom: 1px;
+  grid-template-columns: 120px 120px;
+  grid-template-rows: 21px 20px 21px;
+  row-gap: 1px;
+}
+
+#armor-tn {
+  padding-top: 20px;
+  padding-bottom: 1px;
+  grid-template-columns: 120px 120px;
+  grid-template-rows: 21px 20px 21px;
+  row-gap: 1px;
+}
+
+#armor {
+  padding-top: 20px;
+  padding-bottom: 1px;
+  grid-template-columns: 120px 120px;
+  grid-template-rows: 21px 20px 21px;
+  row-gap: 1px;
+}
+
+#wounds-total {
+  padding-top: 20px;
+  padding-bottom: 1px;
+  grid-template-columns: 120px 120px;
+  grid-template-rows: 36px;
+  row-gap: 1px;
+}
+
+#wounds-level {
+  padding-top: 20px;
+  padding-bottom: 1px;
+  grid-template-columns: 88px 50px 49px 50px;
+  grid-template-rows: repeat(7, 29px) 32px;
+  gap: 1px;
+}
+
+
+#wounds-heal {
+  padding-top: 20px;
+  padding-bottom: 1px;
+  grid-template-columns: 120px 120px;
+  grid-template-rows: 21px 20px 21px;
+  row-gap: 1.1px;
+}
+
+/* Rings board*/
+
+#rings-board {
+  left: 174px;
+  top: 200px;
+  width: 355px;
+  height: 280px;
+  display: flex;
+}
+
+#rings-left {
+  left: 44px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transform: rotate(19.68deg) translate(8px);
+  transform-origin: 50% top;
+  grid-template-rows: repeat(2, 40px) 10px repeat(2, 40px);
+}
+
+#rings-left input {
+  position: relative;
+  transform: rotate(-19.68deg);
+  width: 29px;
+  height: 29px;
+  padding: 6px;
+}
+
+#rings-right {
+  right: 42px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transform: rotate(-18deg) translate(-7px);
+  transform-origin: 50% top;
+  grid-template-rows: repeat(2, 39px) 13px repeat(2, 40px);
+}
+
+#rings-right input {
+  position: relative;
+  transform: rotate(18deg);
+  width: 29px;
+  height: 29px;
+  padding: 6px;
+}
+
+#rings-center {
+  top: 59px;
+  left: 124px;
+  grid-template-rows: 37px 5px 18px 19px 24px;
+  grid-template-columns: 14px 18px 11px 10px 3px 8px 10px 22px 11px;
+}
+
+#rings-center input {
+  position: relative;
+  padding: 10px;
+}
+
+#rings-center input[name="rings[earth][score]"] {
+
+  grid-column: 2 / 6;
+  grid-row: 1 / 3;
+}
+
+#rings-center input[name="rings[air][score]"] {
+  grid-column: 5 / 9;
+  grid-row: 1 / 3;
+}
+
+#rings-center input[name="rings[water][score]"] {
+  grid-column: 1 / 4;
+  grid-row: 2 / 5;
+}
+
+#rings-center input[name="rings[fire][score]"] {
+  grid-column: 7 / 10;
+  grid-row: 2 / 5;
+}
+
+#rings-center input[name="rings[void][score]"] {
+  grid-column: 3 / 8;
+  grid-row: 4 / 6;
+}
+
+div .rings-layout #void-table {
+  bottom: 0;
+  width: auto;
+  left: 50%;
+  transform: translate(-50.5%);
+  background-color: transparent;
+  column-gap: 1.3px;
+}
+
+#void-table > input[type=checkbox] {
+  padding: 2px;
+}

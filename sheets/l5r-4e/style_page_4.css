@@ -1,0 +1,85 @@
+#page-4 img.page {
+  content: url(page-4.svg);
+}
+
+#page-4-grid {
+  left: 72px;
+  top: 108px;
+  width: 816px;
+  height: 1050px;
+  grid-template-columns: 260px 260px auto;
+  grid-template-rows: 750px auto;
+  row-gap: 15px;
+  column-gap: 18px;
+}
+
+#page-4-grid div {
+  position: relative;
+}
+
+#page-4-grid > *[id^="spell-col"] {
+  margin-top: 20px;
+  display: grid;
+  gap: 1px;
+}
+
+#page-4-grid > *[id="spell-col-0"] {
+  grid-template-rows: repeat(7, 145px);
+}
+
+#page-4-grid > *[id="spell-col-1"] {
+  grid-template-rows: repeat(5, 145px);
+}
+
+#page-4-grid > *[id="spell-col-2"] {
+  grid-template-rows: repeat(5, 145px);
+}
+
+
+#page-4-grid > *[id^="spell-col"] > .spell-line > input {
+  position: relative;
+}
+
+#spell-col-0 {
+  grid-row: 1 / span 2;
+}
+
+
+.spell-line {
+  display: grid;
+  grid-template-columns: 116px 37px;
+  grid-template-rows: repeat(2, 21px) 20px 79px;
+  column-gap: 53px;
+  row-gap: 1px;
+  margin-left: 53px;
+  height: 144px;
+}
+
+
+#page-4-grid > *[id^="spell-col"] > .spell-line > textarea[name*="effect"] {
+  position: relative;
+  grid-column: 1 / span 2;
+}
+
+#spell-slot-board {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: repeat(5, 27px);
+  gap: 17px;
+  margin: 58px 14px 22px 137px;
+}
+
+#spell-slot-board > div[id$="slots-table"]{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 29px) repeat(4, 28px) repeat(3, 29px) 28px;
+  column-gap: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+#spell-slot-board > div[id$="slots-table"] > input[type="checkbox"]{
+  position: relative;
+  margin: 3px 3px;
+}

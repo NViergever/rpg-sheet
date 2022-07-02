@@ -1,0 +1,40 @@
+@import "style_page_1.css";
+@import "style_page_2.css";
+@import "style_page_3.css";
+@import "style_page_4.css";
+@import "style_page_5.css";
+
+#sheet input {
+  text-align: center;
+}
+#sheet input[type=checkbox] {
+  height: 20px;
+  width:  20px;
+}
+
+#sheet div {
+  position: absolute;
+}
+
+#sheet .grid-container {
+  background-color: transparent;
+  display: grid;
+}
+
+#sheet .grid-container > div {
+  background-color: transparent;
+  position: relative;
+}
+
+#sheet .tick-rows {
+  grid-auto-flow: column; 
+  width: 211px;
+  height: 20px;
+  display: grid;
+  padding: 1px;
+  column-gap: 1px;
+}
+
+#sheet .tick-rows > input[type=checkbox] {
+  position: relative;
+}

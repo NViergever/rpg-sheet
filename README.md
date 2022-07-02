@@ -14,8 +14,8 @@ can be shared, edited, synced with dropbox, or even put in a git repo, all with
 a file that will still only be a few KBs.
 
 RPG Sheet itself is also easy to modify. It is static HTML, CSS, JavaScript and
-images. You can host it yourself using something as simple as `python -m
-SimpleHTTPServer`. You can also create your own sheet modules, or modify
+images. You can host it yourself using something as simple as `python3 -m
+http.server 8080`. You can also create your own sheet modules, or modify
 existing ones.
 
 

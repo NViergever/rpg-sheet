@@ -1,0 +1,221 @@
+#page-2 img.page {
+  content: url(page-2.svg);
+}
+
+#page-2-grid {
+  left: 72px;
+  top: 72px;
+  width: 817px;
+  height: 1086px;
+  grid-template-columns: 242px auto 270px;
+  grid-template-rows: 321px 438px auto;
+  row-gap: 15px;
+  column-gap: 17px;
+}
+
+#page-2-grid div {
+  position: relative;
+}
+
+#personal-information {
+  margin: 19px 1px 1px 61px;
+  column-gap: 60px;
+  grid-template-columns: 60px 60px;
+  grid-template-rows: repeat(3, 22px) 4px repeat(2, 22px) 37px 36px repeat(2, 22px) 71px;
+}
+
+#personal-information input {
+  position: relative;
+}
+
+#personal-information textarea {
+  position: relative;
+}
+
+#personal-information *[name*="large-"] {
+  grid-column: 1 / span 2;
+}
+
+#advantage-table {
+  margin-top: 24px;
+  grid-column: 2 / span 2;
+}
+
+.advantage-line {
+  display: grid;
+  grid-auto-flow: column; 
+  grid-template-columns: repeat(2, 216px 40px);
+  gap: 11px;
+  margin: 0 6px;
+}
+
+#advantage-table .advantage-line > input {
+  position: relative;
+}
+
+#equipments-and-possessions-table {
+  grid-row: 2;
+  margin: 41px 1px 14px 15px;
+  grid-template-rows: repeat(14, 21px) 41px 34px;
+  gap: 1px; 
+}
+
+.equipment-line {
+  display: grid;
+  grid-auto-flow: column; 
+  gap: 4px; 
+  grid-template-columns: 180px repeat(2, 18px);
+  margin: 0 1px 0 1px;
+}
+
+#equipments-and-possessions-table .equipment-line > input {
+  position: relative;
+}
+
+#equipments-and-possessions-table .equipment-line > input[type=checkbox] {
+  margin: 2px 5px 0 5px;
+  height: 11px;
+  width: 8px;
+}
+
+#money-table {
+  grid-auto-flow: column; 
+  grid-template-columns: repeat(3, 75px);
+  gap: 1px; 
+}
+
+#money-table > input[type=text] {
+  position: relative;
+  text-align: right;
+}
+
+#school-techniques-non-shugenja-table * {
+  position: relative;
+}
+
+#school-techniques-non-shugenja-table  input[name="school-techniques-non-shugenja[school]"] {
+  position: relative;
+}
+
+#school-techniques-non-shugenja-table {
+  gap: 5px;
+  grid-template-rows: 22px 74px 75px 74px 75px 74px;
+  margin: 19px 1px 1px 53px;
+}
+
+.school-techniques-non-shugenja-line {
+  display: grid;
+  position: relative;
+  grid-template-columns: 195px 18px;
+  grid-template-rows: 18px 55px;
+  gap: 1px;
+}
+
+#school-techniques-non-shugenja-table .school-techniques-non-shugenja-line > input {
+  position: relative;
+}
+
+#school-techniques-non-shugenja-table .school-techniques-non-shugenja-line > textarea {
+  position: relative;
+  grid-row: 2;
+  grid-column: 1 / 3;
+}
+
+#school-techniques-shugenja-table * {
+  position: relative;
+}
+
+#school-techniques-shugenja-table {
+  gap: 6px;
+  grid-template-rows: 100px 90px 100px 110px;
+  margin: 20px 1px 1px 53px;
+}
+
+.school-techniques-shugenja-line {
+  display: grid;
+  position: relative;
+  grid-template-columns: 80px 80px;
+  grid-template-rows: 20px 23px auto;
+  row-gap: 1px;
+  column-gap: 54px;
+}
+
+.school-techniques-shugenja-line[name="line2"] {
+  grid-template-rows: 18px 20px 50px;
+}
+
+.school-techniques-shugenja-line[name="line3"] {
+  grid-template-rows: 23px 20px 54px;
+}
+
+.school-techniques-shugenja-line[name="line4"] {
+  grid-template-rows: 19px 21px auto;
+}
+
+#school-techniques-shugenja-table .school-techniques-shugenja-line > input {
+  position: relative;
+}
+
+#school-techniques-shugenja-table .school-techniques-shugenja-line > input[name*="[school]"] {
+  position: relative;
+  grid-row: 1;
+  grid-column: 1 / 3;
+}
+
+#school-techniques-shugenja-table .school-techniques-shugenja-line > textarea {
+  position: relative;
+  grid-row: 3;
+  grid-column: 1 / 3;
+}
+
+#miscellaneous-mechanics-table{
+  grid-column: 1 / span 2;
+  gap: 1px;
+  grid-template-rows: repeat(12, 20px) auto;
+  margin: 21px 1px 1px 7px;
+}
+
+.miscellaneous-mechanics-line {
+  display: grid;
+  position: relative;
+  gap: 1px;
+  grid-template-columns: 159px auto;
+}
+#miscellaneous-mechanics-table .miscellaneous-mechanics-line > * {
+  position: relative;
+}
+
+#kata-table * {
+  position: relative;
+}
+
+#kata-table {
+  gap: 6px;
+  grid-template-rows: repeat(2, 87px) auto;
+  margin: 20px 1px 1px 53px;
+}
+
+.kata-line {
+  display: grid;
+  position: relative;
+  grid-template-columns: 80px 80px;
+  grid-template-rows: 21px 37px auto;
+  row-gap: 1px;
+  column-gap: 54px;
+}
+
+.kata-line[name*="line"] {
+  grid-template-rows: 18px 37px auto;
+}
+
+#kata-table .kata-line > input {
+  position: relative;
+}
+
+.kata-line > input[name*="[name]"]{
+  grid-column: 1 / span 2;
+}
+
+.kata-line > input[name*="[effect]"]{
+  grid-column: 1 / span 2;
+}

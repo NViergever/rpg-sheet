@@ -128,10 +128,15 @@ nav a.title img {
   -moz-box-shadow: none !important;
   box-shadow: none !important;
 }
-#sheet input[type=checkbox]:checked {
-  background-color: black;
+/*#sheet input[type=checkbox]:checked {
+/*  background-color: black;
+/*  text-align: center;
+/*  border-radius: 100%;
+}*/
+#sheet input[type=checkbox]:checked:after {
+  content: "X";
+  color: #000;
   text-align: center;
-  border-radius: 100%;
 }
 
 /* only show character sheet pages when printing */
